@@ -13,21 +13,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3B30A58E-7BE7-4136-9B71-4C67CCFB1AED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.CleanArchitecture.Entities", "Poc.CleanArchitecture.Entities\Poc.CleanArchitecture.Entities.csproj", "{40794465-35EB-4D86-B1FC-B2D474490F56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poc.CleanArchitecture.Entities", "Poc.CleanArchitecture.Entities\Poc.CleanArchitecture.Entities.csproj", "{40794465-35EB-4D86-B1FC-B2D474490F56}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{DB82F596-A43C-4F8E-95BA-ED0A2A0CDECA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{3C59A5F5-883D-496F-A2C1-56F63593ACD9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{3C59A5F5-883D-496F-A2C1-56F63593ACD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.CleanArchitecture.Repositories", "Poc.CleanArchitecture.Repositories\Poc.CleanArchitecture.Repositories.csproj", "{A0F1D370-9BAD-42C9-B9C7-3C964EF42910}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poc.CleanArchitecture.Data", "Poc.CleanArchitecture.Repositories\Poc.CleanArchitecture.Data.csproj", "{A0F1D370-9BAD-42C9-B9C7-3C964EF42910}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{55629E2A-AD71-40CA-87FB-8538203F811A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.CleanArchitecture.Domain", "Poc.CleanArchitecture.Domain\Poc.CleanArchitecture.Domain.csproj", "{E507D521-1C52-4877-8FAA-5E663780B923}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poc.CleanArchitecture.Domain", "Poc.CleanArchitecture.Domain\Poc.CleanArchitecture.Domain.csproj", "{E507D521-1C52-4877-8FAA-5E663780B923}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.CleanArchitecture.Dto", "Poc.CleanArchitecture.Dto\Poc.CleanArchitecture.Dto.csproj", "{8E46F465-6798-4275-B86A-4CA05CD6BEC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poc.CleanArchitecture.Dto", "Poc.CleanArchitecture.Dto\Poc.CleanArchitecture.Dto.csproj", "{8E46F465-6798-4275-B86A-4CA05CD6BEC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clean.Architecture.Application", "Clean.Architecture.Application\Clean.Architecture.Application.csproj", "{A4A5097D-BFC1-4AE7-935F-F49A66F434B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clean.Architecture.Application", "Clean.Architecture.Application\Clean.Architecture.Application.csproj", "{A4A5097D-BFC1-4AE7-935F-F49A66F434B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

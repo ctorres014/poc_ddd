@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Poc.CleanArchitecture.Repositories
+namespace Poc.CleanArchitecture.Data.Repositories
 {
     public class CustomerRepository : ICustomerRepository
     {
