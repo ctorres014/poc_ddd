@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Poc.CleanArchitecture.Entities.DataType;
 
 namespace Poc.CleanArchitecture.Entities.Aggregates.Customer
 {

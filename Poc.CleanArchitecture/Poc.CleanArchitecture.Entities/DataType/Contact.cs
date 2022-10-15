@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Poc.CleanArchitecture.Entities.Aggregates.Customer
+namespace Poc.CleanArchitecture.Entities.DataType
 {
     internal class Contact
     {
