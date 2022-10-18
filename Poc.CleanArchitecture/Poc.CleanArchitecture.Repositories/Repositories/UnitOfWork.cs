@@ -11,7 +11,19 @@ namespace Poc.CleanArchitecture.Data.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly IDbTransaction _dbTransaction;
+        private IDbTransaction _dbTransaction;
+        private IDbConnection _connection;
+
+        public UnitOfWork(IDbConnection connection, IDbTransaction transaction)
+        {
+            _connection = connection;
+            _dbTransaction = transaction;
+        }
+
+        public void BeginTransaction()
+        {
+           _dbTransaction = _connection.BeginTransaction();
+        }
 
         public void Commit()
         {

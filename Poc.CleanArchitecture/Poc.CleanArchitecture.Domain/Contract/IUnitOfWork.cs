@@ -9,5 +9,6 @@ namespace Poc.CleanArchitecture.Domain.Contract
     public interface IUnitOfWork : IDisposable
     {
         void Commit();
+        void BeginTransaction();
     }
 }
