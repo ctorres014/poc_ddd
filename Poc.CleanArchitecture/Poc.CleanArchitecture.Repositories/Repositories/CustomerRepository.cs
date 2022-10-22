@@ -15,11 +15,11 @@ namespace Poc.CleanArchitecture.Data.Repositories
         private IDbConnection _connection;
         public CustomerRepository(IDbConnection connection) => (_connection) = (connection);
 
-        public Customer GetCustomerByID(string customerID)
+        public async Task<Customer> GetCustomerByID(string customerID)
         {
             string query = $"SELECT * FROM Custome WHERE customerID = { customerID }";
 
-            return _connection.QuerySingle<Customer>(query);
+            return await _connection.QuerySingleAsync<Customer>(query);
         }
     }
 }

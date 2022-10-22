@@ -9,6 +9,6 @@ namespace Poc.CleanArchitecture.Domain.Contract
 {
     public interface ICustomerRepository
     {
-        Customer GetCustomerByID(string customerID);
+        Task<Customer> GetCustomerByID(string customerID);
     }
 }

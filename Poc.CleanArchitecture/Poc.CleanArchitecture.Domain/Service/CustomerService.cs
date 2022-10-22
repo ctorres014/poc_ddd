@@ -1,4 +1,5 @@
 ﻿using Clean.Architecture.Application.Contract;
+using Poc.CleanArchitecture.Domain.Contract;
 using Poc.CleanArchitecture.Entities.Aggregates.Customer;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,19 @@ namespace Poc.CleanArchitecture.Domain.Service
 {
     public class CustomerService : ICustomerService
     {
-        public Task<Customer> CustomerSearchByID(string customerID)
+        private ICustomerRepository _customerRepository;
+
+        public CustomerService(ICustomerRepository customerRepository)
         {
-            throw new NotImplementedException();
+            _customerRepository = customerRepository;
+        }
+
+        public async Task<Customer> CustomerSearchByID(string customerID)
+        {
+            if(customerID == null) { throw new ArgumentNullException("El customerID no puede ser nulo"); }
+
+            return await _customerRepository.GetCustomerByID(customerID);
+
         }
     }
 }
