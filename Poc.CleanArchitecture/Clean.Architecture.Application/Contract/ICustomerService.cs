@@ -9,6 +9,6 @@ namespace Clean.Architecture.Application.Contract
 {
     public interface ICustomerService
     {
-        Task<IEnumerable<Customer>> CustomerSearchByID(string customerID);
+        Task<Customer> CustomerSearchByID(string customerID);
     }
 }

@@ -1,5 +1,4 @@
-﻿using Poc.CleanArchitecture.Common.Connection;
-using Poc.CleanArchitecture.Domain.Contract;
+﻿using Poc.CleanArchitecture.Domain.Contract;
 using System;
 using System.Collections.Generic;
 using System.Data;

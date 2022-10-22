@@ -16,7 +16,7 @@ namespace Poc.CleanArchitecture.DependencyInjection
         public static void AddDapperSqlServer(this IServiceCollection service)
         {
             service.AddScoped<DbConnection>(provider => {
-                return new SqlConnection(Environment.GetEnvironmentVariable(""))
+                return new SqlConnection(Environment.GetEnvironmentVariable(""));
             });
 
             service.AddScoped<IUnitOfWork, UnitOfWork>();
