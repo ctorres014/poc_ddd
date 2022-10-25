@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace Poc.CleanArchitecture.Domain.Contract
 {
-    public interface ICustomerRepository
+    public interface ICustomerRepository :  IRepository<Customer>
     {
         Task<Customer> GetCustomerByID(string customerID);
+
     }
 }

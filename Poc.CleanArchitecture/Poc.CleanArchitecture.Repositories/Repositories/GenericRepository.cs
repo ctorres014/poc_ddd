@@ -12,6 +12,7 @@ namespace Poc.CleanArchitecture.Data.Repositories
     public abstract class GenericRepository<T> : IRepository<T> where T : class
     {
         private IDbConnection _connection;
+
         public GenericRepository(IDbConnection connection) =>
             (_connection) = (connection);
 
@@ -40,7 +41,7 @@ namespace Poc.CleanArchitecture.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<T> Update(T entity)
+        public virtual Task<T> Update(T entity)
         {
             throw new NotImplementedException();
         }

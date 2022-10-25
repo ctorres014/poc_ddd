@@ -10,16 +10,32 @@ using System.Threading.Tasks;
 
 namespace Poc.CleanArchitecture.Data.Repositories
 {
-    public class CustomerRepository : ICustomerRepository
+    public class CustomerRepository : GenericRepository<Customer>, ICustomerRepository
     {
         private IDbConnection _connection;
-        public CustomerRepository(IDbConnection connection) => (_connection) = (connection);
+        private IDbTransaction _transaction;
+
+        public CustomerRepository(IDbConnection connection, IDbTransaction transaction) 
+            : base(connection)
+        {
+            _connection = connection;
+            _transaction = transaction;
+        }
 
         public async Task<Customer> GetCustomerByID(string customerID)
         {
-            string query = $"SELECT * FROM Custome WHERE customerID = { customerID }";
+            using(var connection = _connection)
+            {
+                _connection.Open();
+                string query = $"SELECT * FROM Custome WHERE customerID = { customerID }";
+                return await _connection.QuerySingleAsync<Customer>(query, null, _transaction);
+            }
+        }
 
-            return await _connection.QuerySingleAsync<Customer>(query);
+        public override Task<Customer> Update(Customer entity)
+        {
+
+            return base.Update(entity);
         }
     }
 }
